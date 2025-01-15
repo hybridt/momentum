@@ -1,0 +1,24 @@
+@import 'base/normalize';
+@import 'base/base';
+
+@import 'vendors/owfont/owfont-regular.scss';
+
+@import 'layouts/background';
+@import 'layouts/header';
+@import 'layouts/main';
+@import 'layouts/footer';
+
+@import 'components/button';
+@import 'components/audio';
+@import 'components/slider';
+@import 'components/weather';
+@import 'components/clock';
+@import 'components/calendar';
+@import 'components/greeting';
+@import 'components/quote';
+@import 'components/todo';
+@import 'components/error';
+@import 'components/settings';
+@import 'components/window';
+@import 'components/options';
+@import 'components/toggle';

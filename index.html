@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <title>Momentum</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="audio hidden">
+        <div class="audio__player">
+          <p class="audio__current-song"> </p>
+          <audio preload="metadata"></audio>
+          <div class="audio__slider-container">
+            <span class="audio__current-time">0:00</span>
+            <input class="slider audio__slider" type="range" value="0">
+            <span class="audio__duration">0:00</span>
+          </div>
+          <div class="audio__controls">
+            <button class="button button_play-prev"></button>
+            <button class="button button_play"></button>
+            <button class="button button_play-next"></button>
+            <div class="audio__volume">
+              <button class="button button_volume"></button>
+              <input class="slider audio__volume-slider" type="range" value="50">
+            </div>
+          </div>
+        </div>
+        <ul class="audio__playlist"></ul>
+      </div>
+      <div class="weather hidden">
+        <div class="weather__input">
+          <input class="weather__city" type="text">
+        </div>
+        <div class="weather__image owf"></div>
+        <div class="weather__info">
+          <p><span class="weather__temp"></span> <span class="weather__description"></span></p>
+          <p class="weather__header">Wind speed: <span class="weather__wind"></span></p>
+          <p class="weather__header">Humidity: <span class="weather__humidity"></span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__wrapper">
+      <div class="main__slider">
+        <div class="button button_arrowL"></div>
+      </div>
+      <div class="main__content">
+        <div class="clock hidden"></div>
+        <div class="calendar hidden"></div>
+        <div class="greeting hidden">
+          <span class="greeting__time-of-day"></span>
+          <input class="greeting__name" type="text" placeholder="[Enter name]" name="username">
+        </div>
+      </div>
+      <div class="main__slider">
+        <div class="button button_arrowR"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="settings">
+        <ul class="settings__menu window">
+          <li class="settings__item">
+            <span class="settings__title">Language</span>
+            <span class="options">
+              <span class="options__item options__item_lang" id="en">
+                English
+                <input class="options__input" type="radio" name="lang" value="en">
+              </span>
+              <span class="options__item options__item_lang" id="ru">
+                Russian
+                <input class="options__input" type="radio" name="lang" value="ru">
+              </span>
+            </span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Background Source</span>
+            <span class="options">
+              <span class="options__item options__item_background" id="github">
+                GitHub
+                <input class="options__input" type="radio" name="background" value="github">
+              </span>
+              <span class="options__item options__item_background" id="unsplash">
+                Unsplash
+                <input class="options__input" type="radio" name="background" value="unsplash">
+              </span>
+              <span class="options__item options__item_background" id="flickr">
+                Flickr
+                <input class="options__input" type="radio" name="background" value="flickr">
+              </span>
+            </span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Audio Player</span>
+            <input class="toggle__input" type="checkbox" name="audio">
+            <span class="toggle" id="audio"></span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Weather</span>
+            <input class="toggle__input" type="checkbox" name="weather">
+            <span class="toggle" id="weather"></span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Clock</span>
+            <input class="toggle__input" type="checkbox" name="clock">
+            <span class="toggle" id="clock"></span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Date</span>
+            <input class="toggle__input" type="checkbox" name="calendar">
+            <span class="toggle" id="calendar"></span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Greeting</span>
+            <input class="toggle__input" type="checkbox" name="greeting">
+            <span class="toggle" id="greeting"></span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Quote of the Day</span>
+            <input class="toggle__input" type="checkbox" name="quote">
+            <span class="toggle" id="quote"></span>
+          </li>
+          <li class="settings__item">
+            <span class="settings__title">Todo</span>
+            <input class="toggle__input" type="checkbox" name="todo">
+            <span class="toggle" id="todo"></span>
+          </li>
+        </ul>
+        <button class="settings__button button button_settings"></button>
+      </div>
+      <div class="quote hidden">
+        <div class="button button_new-quote quote__new-btn"></div>
+        <div class="quote__content">
+          <div class="quote__text"></div>
+          <div class="quote__author"></div>
+        </div>
+      </div>
+      <div class="todo hidden">
+        <span class="todo__btn">Todo</span>
+        <div class="window todo__menu">
+          <div class="todo__content">
+            <div class="todo__start-block">
+              <p class="todo__text">Add a todo to get started</p>
+              <button class="todo__button button button_add"></button>
+            </div>
+            <ul class="todo__list">
+            </ul>
+          </div>
+          <div class="todo__input">
+            <input type="text" id="do">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/dateTime.js"></script>
+  <script src="assets/js/greeting.js"></script>
+  <script src="assets/js/changeBackground.js"></script>
+  <script src="assets/js/weatherWidget.js"></script>
+  <script src="assets/js/quotes.js"></script>
+  <script type="module" src="assets/js/audioPlayer.js"></script>
+  <script type="module" src="assets/js/settings.js"></script>
+  <script src="assets/js/todo.js"></script>
+</body>
+</html>

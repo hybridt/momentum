@@ -1,0 +1,16 @@
+.footer {
+  user-select: auto;
+}
+
+.footer__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+
+.footer__quote {
+  text-align: center;
+}

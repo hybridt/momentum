@@ -1,0 +1,116 @@
+.audio {
+  transition: opacity 0.5s;
+
+  @media (max-width: 460px) {
+    display: flex;
+    width: 100%;
+  }
+
+  @media (max-width: 376px) {
+    justify-content: center;
+  }
+}
+
+.audio__player {
+  margin-bottom: 10px;
+  max-width: 207px;
+}
+
+.audio__current-song {
+  height: 1.6rem;
+  opacity: 0;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.5s;
+
+  &.active {
+    opacity: 1;
+  }
+
+  @media (max-width: 460px) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 376px) {
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+
+.audio__slider-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  span {
+    padding: 0 5px;
+  }
+}
+
+.audio__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+  flex-wrap: wrap;
+  gap: 8%;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.audio__volume {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 5%;
+
+  button {
+    flex: 0 0 auto;
+  }
+}
+
+.audio__playlist {
+  margin: 0;
+  padding: 0;
+  max-height: 105px;
+
+  @media (max-width: 460px) {
+    padding-left: 10px;
+    overflow: auto;
+  }
+
+  @media (max-width: 376px) {
+    display: none;
+  }
+}
+
+.audio__song {
+  display: flex;
+  align-items: flex-start;
+  padding: 3px 0;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.audio__song-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.audio__song-name {
+  padding-left: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

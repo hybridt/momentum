@@ -1,0 +1,66 @@
+.button {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &_play-prev {
+    background-image: url('assets/img/svg/audio/play-prev.svg');
+  }
+
+  &_play {
+    width: 40px;
+    height: 40px;
+    background-image: url('assets/img/svg/audio/play.svg');
+  }
+
+  &_pause {
+    width: 40px;
+    height: 40px;
+    background-image: url('assets/img/svg/audio/pause.svg');
+  }
+
+  &_play-next {
+    background-image: url('assets/img/svg/audio/play-next.svg');
+  }
+
+  &_volume {
+    background-image: url('assets/img/svg/audio/volume.svg');
+  }
+
+  &_volume-mute {
+    background-image: url('assets/img/svg/audio/volume-mute.svg');
+  }
+
+  &_arrowL {
+    background-image: url('assets/img/svg/slider/slider-prev.svg');
+  }
+
+  &_arrowR {
+    background-image: url('assets/img/svg/slider/slider-next.svg');
+  }
+
+  &_new-quote {
+    background-image: url('assets/img/svg/quote/new-quote.svg');
+  }
+
+  &_settings {
+    background-image: url('assets/img/svg/settings/settings.svg');
+  }
+
+  &_add {
+    background-image: url('assets/img/svg/todo/add.svg');
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    transform: scale(1.1);
+  }
+}

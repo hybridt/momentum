@@ -1,0 +1,33 @@
+html {
+  font-size: 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family:'Segoe UI', Tahoma, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  opacity: 0;
+
+  & > * {
+    visibility: hidden;
+    transition: visibility 0.5s;
+  }
+}

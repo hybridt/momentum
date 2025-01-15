@@ -1,0 +1,23 @@
+.main {
+  flex-grow: 1;
+  user-select: none;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+}
+
+.main__content {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

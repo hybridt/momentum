@@ -1,0 +1,35 @@
+.greeting {
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+  transition: opacity 0.5s;
+
+  @media (max-width: 375px) {
+    font-size: 2.6rem;
+  }
+}
+
+.greeting__time-of-day {
+
+}
+
+.greeting__name {
+  max-width: 200px;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  line-height: inherit;
+
+  @media (max-width: 375px) {
+    max-width: 150px;
+  }
+
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.greeting__name::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}

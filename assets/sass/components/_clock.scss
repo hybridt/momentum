@@ -1,0 +1,18 @@
+.clock {
+  font-size: 14rem;
+  font-weight: bold;
+  transition: opacity 0.5s;
+
+  @media (max-width: 831px) {
+    font-size: 8rem;
+  }
+
+  @media (max-width: 516px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 410px) {
+    font-size: 4rem;
+  }
+}
+

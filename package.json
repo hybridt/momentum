@@ -1,0 +1,16 @@
+{
+  "name": "momentum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "sass assets/sass/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hybridt"
+  },
+  "author": "hybridt",
+  "license": "ISC"
+}

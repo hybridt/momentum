@@ -1,0 +1,9 @@
+.window {
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(0);
+  z-index: 10;
+  transition: all 0.5s ease;
+}

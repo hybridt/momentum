@@ -1,0 +1,14 @@
+.header {
+  user-select: none;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  @media (max-width: 460px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

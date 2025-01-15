@@ -1,0 +1,53 @@
+.settings {
+  transition: all 0.5s;
+  user-select: none;
+
+  &.active {
+    .settings__button {
+      transform: rotate(45deg);
+    }
+
+    .settings__menu {
+      transform: translateY(-15px);
+      opacity: 1;
+    }
+  }
+
+}
+
+.settings__menu {
+  margin: 0;
+  opacity: 0;
+  bottom: 40%;
+
+  @media (max-width: 460px) {
+    left: 0;
+    right: 0;
+  }
+}
+
+.settings__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+
+  @media (max-width: 460px) {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}
+
+.toggle__input {
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+  appearance: none;
+  height: 8px;
+  border-radius: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    border-radius: 10px;
+    width: var(--slider-progress);
+    opacity: 0.8;
+    background-color: #c3c347;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    opacity: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #c3c347;
+    transition: all 0.5s;
+  }
+
+  &:hover::-webkit-slider-thumb {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+
+.audio__volume-slider {
+  width: 100%;
+
+  &::-webkit-slider-thumb {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
